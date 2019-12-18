@@ -1,0 +1,275 @@
+@font-face{
+    font-family: 'TTLakes';
+    src: url('TTLakes-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'TTLakes';
+    src: url('TTLakes-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'TTLakes';
+    src: url('TTLakes-Medium.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body, body *{
+    padding: 0;
+    margin: 0;
+    font-family: 'TTLakes';
+}
+
+body{
+    box-sizing: border-box;
+    overflow-X: hidden;
+    background: #F8F8F8;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+/* Круглые кнопки с иконками */
+
+.button-r{
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 40px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    outline: none;
+    text-decoration: none;
+    
+}
+.button-r__svg{}
+
+
+
+
+
+
+
+
+
+
+/* Верхнее меню */
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+    padding: 16px;
+    box-shadow: 0 1px 0 #D9FFF5;
+    background: #fff;
+}
+.menu__hr{
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+}
+.menu__logo{}
+.menu__logo-svg{}
+
+.menu_display_none{
+    display: none;
+}
+
+
+
+
+
+
+
+/* Заголовок с меню */
+
+.header{}
+.header__contener{
+    display: flex;
+    padding-right: 32px;
+}
+.header__h1{
+    font-size: 28px;
+    position: relative;
+    line-height: 40px;
+    padding: 24px 0 24px 16px;
+    flex-grow: 1;
+}
+.header__h1-svg{
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 24px;
+}
+.header__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.header__button-text{
+    margin-right: 10px;
+}
+.header__nav-menu{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 16px 24px 16px;
+}
+.header__contener-menu{
+    position: relative;
+    padding-right: 16px;
+}
+.header__contener-menu:before{
+    position: absolute;
+    display: block;
+    right: 0;
+    content: "";
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+.header__nav-menu-item{
+    height: 40px;
+    white-space: nowrap;
+    padding: 0 16px;
+    
+    border-radius: 6px;
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: medium;
+    text-decoration: none;
+    color: #7E7E82;
+}
+.header__nav-menu-item:hover{
+    border: 2px solid #B8FFEC;
+}
+.header_display_none{
+    display: none;
+}
+
+
+
+
+
+/* Блок страницы */
+
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.article__img-mask{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #FFFFFF;
+
+    flex-basis: 100%;
+}
+
+.article__img{
+    width: 100%;
+    height: 100%;
+}
+
+.article__contener{
+    padding: 0 16px;
+
+    flex-basis: 100%;
+}
+
+.article__text{
+    font-size: 14px;
+
+    height: 94px;
+    overflow: hidden;
+}
+.article__next{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1B1C21;
+    padding: 16px 0 16px 0;
+}
+.article__next-svg{
+    margin: 0 16px;
+}
+
+
+
+
+
+
+@media all and (min-width: 768px){
+    .menu{
+        padding: 24px;
+    }
+    .menu__logo{
+        margin-right: 30%;
+    }
+    .menu_display_none{
+        display: flex;
+    }
+
+
+    .article__contener{
+        flex-basis: 50%;
+    }
+    .article__img-mask{
+        flex-basis: 50%;
+    }
+    .article__text{
+        height: 138px;
+    }
+}
+
+
+@media all and (min-width: 1120px){
+    .menu{
+        display: none;
+    }
+
+    .header_display_none{
+        display: flex;
+    }
+
+    .header__h1{
+        padding: 42px 0 24px 32px;
+    }
+    .header__nav-menu{
+        overflow-x: auto;
+        flex-wrap: wrap;
+    }
+
+    .article__text{
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+

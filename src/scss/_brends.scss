@@ -1,0 +1,137 @@
+
+/* Список брендов */
+
+/* .swiper-wrapper */
+.brends__swiper{
+    display: flex;
+    position: relative;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+.swiper-pagination-bullet-active{
+    opacity: .6; 
+}
+
+.brends{
+    width: 100vw;
+}
+.brends__pagination{
+    align-self: center;
+}
+.brends__title{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $text-share-color;
+    padding: 16px 16px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top: 1px solid #D9FFF5;
+    text-transform: uppercase;
+}
+.brends__contener{
+    padding: 24px 16px 16px 16px;
+}
+.brends__list{
+    height: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+    transition: max-height ease-in-out 0.8s;
+}
+.brends__list:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 24px;
+    height: 72px;
+    background: url(../img/fade_copy.png) no-repeat center/contain;
+    z-index: 999;
+}
+.brends__box{
+    padding: 0 16px 16px 0px;
+}
+.brends__list-item{
+    width: 100%;
+    min-width: 220px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    position: relative;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+}
+.brends__button{
+    width: 38px;
+    height: 38px;
+    
+    border: 2px solid $red-interfases-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    color: $red-interfases-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brends__button-svg{
+    position: relative;
+    left: 1px;
+}
+
+
+.brends__list--hidden{
+    max-height: 160px;
+}
+.brends__view{
+    display: none;
+}
+.brends__view--rotate{
+    transform: rotate(180deg);
+}
+.brends__view-text--hidden{
+    display: none;
+}
+
+
+@media all and (min-width: 768px){
+    .brends__pagination{
+        display: none;
+    }
+    .brends__view{
+        display: block;
+    }
+    .brends__box{
+        width: calc(100% / 3);
+    }
+
+    /* .swiper-wrapper */
+    .brends__swiper{
+        flex-wrap: wrap;
+    }
+}
+@media all and (min-width: 1120px){
+    .brends__box{
+        width: 25%;
+    }
+    .brends{
+        width: 100%;
+    }
+}

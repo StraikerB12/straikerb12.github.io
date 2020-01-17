@@ -1,0 +1,136 @@
+
+
+
+/* Верхнее меню */
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+    padding: 24px 16px;
+    box-shadow: 0 1px 0 #D9FFF5;
+    background: #fff;
+}
+.menu__hr{
+    width: 2px;
+    height: 32px;
+    background-color: $border-color;
+}
+.menu--display--none{
+    display: none;
+}
+
+
+
+
+
+
+
+/* Заголовок с меню */
+.header{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.header__contener{
+    display: flex;
+    padding-right: 32px;
+}
+.header__title{
+    font-size: 28px;
+    position: relative;
+    line-height: 40px;
+    padding: 24px 0 24px 16px;
+    flex-grow: 1;
+}
+.header__title-svg{
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 24px;
+}
+.header__button{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.header__button-text{
+    margin-right: 10px;
+}
+.header__nav-menu{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    padding: 2px 16px 24px 16px;
+}
+.header__contener-menu{
+    width: 100%;
+    flex-basis: 100%;
+    position: relative;
+    padding-right: 16px;
+}
+.header__contener-menu:before{
+    position: absolute;
+    display: block;
+    right: 0;
+    content: "";
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+.header__nav-menu-item{
+    height: 40px;
+    white-space: nowrap;
+    padding: 0 16px;
+    border-radius: 6px;
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $text-share-color;
+}
+.header__nav-menu-item:hover{
+    box-shadow: 0 0 0 2px #B8FFEC;
+    background: #fff;
+}
+
+
+@media all and (min-width: 768px){
+    .menu{
+        padding: 24px;
+    }
+    .logo--margin--right{
+        margin-right: 25%;
+    }
+    .menu--display--none{
+        display: flex;
+    }
+}
+
+
+@media all and (min-width: 1440px){
+    .menu{
+        display: none;
+    }
+
+    .header{
+        width: 100%;
+    }
+    .header__button{
+        display: flex;
+    }
+
+    .header__title{
+        padding: 42px 0 24px 32px;
+    }
+    .header__nav-menu{
+        overflow-x: auto;
+        flex-wrap: wrap;
+    }
+}

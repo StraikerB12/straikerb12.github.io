@@ -1,0 +1,49 @@
+
+/* Блок страницы */
+
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.article__img-mask{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #FFFFFF;
+    flex-basis: 100%;
+}
+.article__img{
+    width: 100%;
+    height: 100%;
+}
+.article__contener{
+    padding: 0 16px;
+    flex-basis: 100%;
+}
+.article__text{
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+.article__text-contener{
+    height: 92px;
+    overflow: hidden;
+}
+
+@media all and (min-width: 768px){
+    .article__contener{
+        flex-basis: 50%;
+    }
+    .article__img-mask{
+        flex-basis: 50%;
+    }
+    .article__text-contener{
+        height: 134px;
+    }
+}
+
+
+@media all and (min-width: 1120px){
+    .article__text-contener{
+        height: auto;
+    }
+}

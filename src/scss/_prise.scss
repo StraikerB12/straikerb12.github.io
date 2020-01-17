@@ -1,0 +1,246 @@
+
+/* Список типов */
+
+
+/* .swiper-wrapper */
+.prise__swiper{
+    display: flex;
+    position: relative;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+.swiper-pagination-bullet-active{
+    opacity: .6; 
+}
+
+
+.prise{
+    width: 100vw;
+}
+.prise__pagination{
+    align-self: center;
+}
+.prise__title{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $text-share-color;
+    padding: 16px 16px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top: 1px solid #D9FFF5;
+    text-transform: uppercase;
+}
+.prise__contener{
+    padding: 24px 16px 16px 16px;
+}
+.prise__list{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+    transition: max-height ease-in-out 0.8s;
+}
+.prise__list:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 24px;
+    height: 260px;
+    background: url(../img/fade_copy.png) repeat center/contain;
+    z-index: 999;
+}
+.prise__head-table{
+    display: none;
+}
+.prise__box{
+    padding: 0 16px 16px 0px;
+}
+.prise__list-item{
+    width: 100%;
+    min-width: 260px;
+    height: 200px;
+    background: #FFFFFF;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    position: relative;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.prise__item-descript{}
+.prise__item-prise{}
+.prise__item-time{}
+
+
+
+.prise__item-share{
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-share-color;
+}
+.prise__item-text{
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color;
+    padding-bottom: 16px;
+}
+
+.prise__discription{
+    font-size: 14px;
+    line-height: 20px;
+}
+.prise__view{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+    text-decoration: none;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.prise__button{
+    background: $red-interfases-color;
+    border-radius: 16px;
+    padding: 4px 12px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    cursor: pointer;
+    line-height: 24px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.prise__button-text{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.prise__button-svg{
+    position: relative;
+    left: 1px;
+    margin: 0 5px 0 10px;
+}
+
+
+.prise__list--hidden{
+    max-height: 160px;
+}
+
+.prise__view--rotate{
+    transform: rotate(180deg);
+}
+.prise__view-text--hidden{
+    display: none;
+}
+
+
+@media all and (min-width: 768px){
+    .prise__pagination{
+        display: none;
+    }
+    .prise__view{
+        display: block;
+    }
+    .prise__box{
+        width: 100%;
+        padding: 0;
+    }
+
+    /* .swiper-wrapper */
+    .prise__swiper{
+        flex-direction: column;
+    }
+
+    .prise__item-descript{
+        width: 55%;
+    }
+    .prise__item-prise{
+        width: 12%;
+    }
+    .prise__item-time{
+
+    }
+
+
+
+    .prise__item-share{
+        display: none;
+    }
+    .prise__item-text{
+        padding-bottom: 0;
+    }
+
+    .prise__head-table{
+        display: flex;
+        flex-direction: row;
+        padding: 16px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+    }
+    .prise__list{
+        align-items: stretch;
+    }
+    .prise__list:before{
+        display: none;
+    }
+    .prise__list-item{
+        position: relative;
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 0;
+        padding: 23px 16px;
+        flex-direction: row;
+    }
+    .prise__list-item:before{
+        content: "";
+        position: absolute;
+        width:calc(100% - 32px);
+        height: 1px;
+        bottom: 0;
+        left: 16px;
+        background: #EAEAEA;
+    }
+
+    .prise__box:first-of-type .prise__list-item{
+        border-radius: 6px 6px 0 0;
+    }
+    .prise__box:last-of-type .prise__list-item{
+        border-radius: 0 0 6px 6px;
+    }
+    .prise__box:last-of-type .prise__list-item:before{
+        display: none;
+    }
+
+    .prise__discription{
+        padding-top: 16px;
+    }
+    
+
+}
+
+@media all and (min-width: 1120px){
+    .prise{
+        width: 100%;
+    }
+}

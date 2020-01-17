@@ -1,17 +1,121 @@
-$bgColor: #24292e;
+/*$bgColor: #24292e;
 $text: #fff;
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
 
 body {
   padding: 1rem;
   margin: 0;
-  font-family: Comic, sans-serif;
   background-color: $bgColor;
   color: $text;
 }
+*/
+
+
+@import 'normalize';
+
+
+$red-interfases-color: #FF3E79;
+$border-color: #EAEAEA;
+$text-color: #1B1C21;
+$text-share-color: #7E7E82;
+
+
+@font-face{
+  font-family: 'TTLakes';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'TTLakes';
+  src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'TTLakes';
+  src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+body *{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  box-sizing: border-box;
+  overflow-X: hidden;
+  background: #F8F8F8;
+  padding: 0;
+  margin: 0;
+  font-family: 'TTLakes';
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+
+/* Круглые кнопки с иконками */
+.button-radial{
+  width: 40px;
+  height: 40px;
+  background: $red-interfases-color;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: opacity linear 0.15s;
+}
+.button-radial:hover{
+  opacity: 0.8;
+}
+
+
+/* ссылка далее */
+.next{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1B1C21;
+  padding: 16px 0 16px 0;
+}
+.next__svg{
+  margin: 0 16px;
+}
+
+
+/* main-contener */
+.main-contener{
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media all and (min-width: 1440px){
+  .main-contener__content{
+      width: calc(100% - 300px);
+  }
+}
+
+
+@import 'header';
+@import 'footer';
+@import 'menu-static';
+@import 'modals';
+
+@import 'article';
+@import 'brends';
+@import 'types';
+@import 'prise';

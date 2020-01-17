@@ -1,0 +1,118 @@
+
+
+.modals{
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 99999999;
+    transform: translateX(100vw);
+    transition: transform 0s linear 0.5s;
+}
+.modals--show{
+    transform: translateX(0);
+    transition: transform 0s linear 0s;
+}
+
+.modals__content{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    max-width: 360px;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    overflow-y: scroll;
+
+    background: #fff;
+    transition: transform 0.5s ease-in-out;
+
+}
+.modals__content--show{
+    transform: translateX(0);
+    box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2), 2px 0px 4px rgba(69, 79, 126, 0.02);
+}
+
+
+.modals__contener{
+    padding: 16px 16px 0 16px;
+}
+
+.modals__head{}
+.modals__close{
+    padding: 24px 16px 16px 16px;
+}
+
+.modals__title{
+    font-size: 24px;
+    position: relative;
+    line-height: 40px;
+    padding: 5px 0 5px 16px;
+    flex-grow: 1;
+}
+.modals__title-svg{
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.modals__input{
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B5B6BC;
+    padding: 10px 16px;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+.modals__footer{
+    padding: 0 16px 16px 16px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-share-color;
+}
+.modals__footer-contener{
+    overflow: hidden;
+    padding-bottom: 24px;
+}
+.modals__footer a{
+    text-decoration: none;
+    color: $red-interfases-color;
+}
+
+.modals__button{
+    float: right;
+    background: $red-interfases-color;
+    border-radius: 16px;
+    padding: 4px 12px;
+    cursor: pointer;
+    line-height: 24px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+}
+.modals__button-text{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+.modals__button-svg{
+    position: relative;
+    left: 1px;
+    margin: 0 5px 0 10px;
+}

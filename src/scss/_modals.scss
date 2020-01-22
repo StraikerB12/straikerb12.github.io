@@ -85,34 +85,7 @@
     overflow: hidden;
     padding-bottom: 24px;
 }
-.modals__footer a{
+.modals__links{
     text-decoration: none;
     color: $red-interfases-color;
-}
-
-.modals__button{
-    float: right;
-    background: $red-interfases-color;
-    border-radius: 16px;
-    padding: 4px 12px;
-    cursor: pointer;
-    line-height: 24px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border: none;
-    margin-top: 20px;
-}
-.modals__button-text{
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-}
-.modals__button-svg{
-    position: relative;
-    left: 1px;
-    margin: 0 5px 0 10px;
 }

@@ -34,18 +34,18 @@
 
             <div class="modals__contener">
                 <input class="modals__input" type="text" placeholder="Имя">
-                <input class="modals__input" type="text" placeholder="Телефон">
-                <input class="modals__input" type="text" placeholder="Электронная почта">
+                <input class="modals__input" type="tel" placeholder="Телефон">
+                <input class="modals__input" type="email" placeholder="Электронная почта">
                 <textarea class="modals__input" placeholder="Сообщение" rows="4"></textarea>
             </div>
             
 
             <div class="modals__footer">
-                Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a>
+                Нажимая “отправить”, вы даете согласие на <a class="modals__links" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="modals__links" href="#">политикой конфиденциальности</a>
                 <div class="modals__footer-contener">
-                    <button class="modals__button">
-                        <p class="modals__button-text">Отправить</p>
-                        <svg class="modals__button-svg" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="button-send">
+                        <div class="button-send__text">Отправить</div>
+                        <svg class="button-send__svg" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z" fill="white"/>
                         </svg>
                     </button>
@@ -80,9 +80,9 @@
             <div class="modals__footer">
                 Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a>
                 <div class="modals__footer-contener">
-                    <button class="modals__button">
-                        <p class="modals__button-text">Отправить</p>
-                        <svg class="modals__button-svg" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="button-send">
+                        <div class="button-send__text">Отправить</div>
+                        <svg class="button-send__svg" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z" fill="white"/>
                         </svg>
                     </button>
@@ -309,7 +309,7 @@
 
 
             <section class="brends">
-                <h2 class="brends__title">Ремонт техники различных брендов</h2>
+                <h2 class="title">Ремонт техники различных брендов</h2>
                 <div class="brends__contener">
 
                     <div class="brends__list brends__list--hidden">
@@ -441,7 +441,7 @@
 
 
             <section class="types">
-                <h2 class="types__title">Ремонт различных видов техники</h2>
+                <h2 class="title">Ремонт различных видов техники</h2>
                 <div class="types__contener">
 
                     <div class="types__list types__list--hidden">
@@ -543,23 +543,16 @@
 
 
             <section class="prise">
-                <h2 class="prise__title">Ремонт различных видов техники</h2>
-
+                <h2 class="title">Ремонт различных видов техники</h2>
 
                 <div class="prise__contener">
-
                     <div class="prise__head-table">
                         <div class="prise__item-descript">Ремонтные услуги</div>
                         <div class="prise__item-prise">Цена</div>
                         <div class="rise__item-time">Срок</div>
                     </div>
-
                     <div class="prise__list">
-
-                        
-
                         <div class="prise__swiper swiper-wrapper">
-
                             <div class="prise__box swiper-slide">
                                 <div class="prise__list-item">
                                     <div class="prise__item-descript">
@@ -574,42 +567,14 @@
                                         <p class="prise__item-share">Срок</p>
                                         <p class="prise__item-text">30-120 мин</p>
                                     </div>
-
-                                    <a class="prise__button" href="#">
-                                        <p class="prise__button-text">Заказать</p>
-                                        <svg class="prise__button-svg" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z" fill="white"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="prise__box swiper-slide">
-                                <div class="prise__list-item">
-                                    <div class="prise__item-descript">
-                                        <p class="prise__item-share">Ремонтные услуги</p>
-                                        <p class="prise__item-text">Тестирование с выдачей технического заключения</p>
-                                    </div>
-                                    <div class="prise__item-prise">
-                                        <p class="prise__item-share">Цена</p>
-                                        <p class="prise__item-text">Бесплатно</p>
-                                    </div>
-                                    <div class="prise__item-time">
-                                        <p class="prise__item-share">Срок</p>
-                                        <p class="prise__item-text">30-120 мин</p>
-                                    </div>
-                                    <a class="prise__button" href="#">
-                                        <p class="prise__button-text">Заказать</p>
-                                        <svg class="prise__button-svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a class="prise__button button-send" href="#">
+                                        <div class="button-send__text">Заказать</div>
+                                        <svg class="button-send__svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="white"/>
                                         </svg>
                                     </a>
                                 </div>
                             </div>
-
                             <div class="prise__box swiper-slide">
                                 <div class="prise__list-item">
                                     <div class="prise__item-descript">
@@ -624,15 +589,14 @@
                                         <p class="prise__item-share">Срок</p>
                                         <p class="prise__item-text">30-120 мин</p>
                                     </div>
-                                    <a class="prise__button" href="#">
-                                        <p class="prise__button-text">Заказать</p>
-                                        <svg class="prise__button-svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a class="prise__button button-send" href="#">
+                                        <div class="button-send__text">Заказать</div>
+                                        <svg class="button-send__svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="white"/>
                                         </svg>
                                     </a>
                                 </div>
                             </div>
-
                             <div class="prise__box swiper-slide">
                                 <div class="prise__list-item">
                                     <div class="prise__item-descript">
@@ -647,15 +611,14 @@
                                         <p class="prise__item-share">Срок</p>
                                         <p class="prise__item-text">30-120 мин</p>
                                     </div>
-                                    <a class="prise__button" href="#">
-                                        <p class="prise__button-text">Заказать</p>
-                                        <svg class="prise__button-svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a class="prise__button button-send" href="#">
+                                        <div class="button-send__text">Заказать</div>
+                                        <svg class="button-send__svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="white"/>
                                         </svg>
                                     </a>
                                 </div>
                             </div>
-
                             <div class="prise__box swiper-slide">
                                 <div class="prise__list-item">
                                     <div class="prise__item-descript">
@@ -670,15 +633,14 @@
                                         <p class="prise__item-share">Срок</p>
                                         <p class="prise__item-text">30-120 мин</p>
                                     </div>
-                                    <a class="prise__button" href="#">
-                                        <p class="prise__button-text">Заказать</p>
-                                        <svg class="prise__button-svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a class="prise__button button-send" href="#">
+                                        <div class="button-send__text">Заказать</div>
+                                        <svg class="button-send__svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="white"/>
                                         </svg>
                                     </a>
                                 </div>
                             </div>
-
                             <div class="prise__box swiper-slide">
                                 <div class="prise__list-item">
                                     <div class="prise__item-descript">
@@ -693,16 +655,36 @@
                                         <p class="prise__item-share">Срок</p>
                                         <p class="prise__item-text">30-120 мин</p>
                                     </div>
-                                    <a class="prise__button" href="#">
-                                        <p class="prise__button-text">Заказать</p>
-                                        <svg class="prise__button-svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a class="prise__button button-send" href="#">
+                                        <div class="button-send__text">Заказать</div>
+                                        <svg class="button-send__svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="white"/>
                                         </svg>
                                     </a>
                                 </div>
                             </div>
-
-
+                            <div class="prise__box swiper-slide">
+                                <div class="prise__list-item">
+                                    <div class="prise__item-descript">
+                                        <p class="prise__item-share">Ремонтные услуги</p>
+                                        <p class="prise__item-text">Тестирование с выдачей технического заключения</p>
+                                    </div>
+                                    <div class="prise__item-prise">
+                                        <p class="prise__item-share">Цена</p>
+                                        <p class="prise__item-text">Бесплатно</p>
+                                    </div>
+                                    <div class="prise__item-time">
+                                        <p class="prise__item-share">Срок</p>
+                                        <p class="prise__item-text">30-120 мин</p>
+                                    </div>
+                                    <a class="prise__button button-send" href="#">
+                                        <div class="button-send__text">Заказать</div>
+                                        <svg class="button-send__svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="prise__pagination"></div>
                     </div>
